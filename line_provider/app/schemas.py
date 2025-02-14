@@ -14,5 +14,4 @@ class Event(BaseModel):
     coefficient: Optional[decimal.Decimal] = None
     deadline: Optional[int] = None
     state: Optional[EventState] = None
-
-
+    status_updated: Optional[bool] = None

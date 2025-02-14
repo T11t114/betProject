@@ -27,6 +27,12 @@ def get_expired_events(current_time: int) -> List[Event]:
     """
     return [event for event in events.values() if event.deadline < current_time]
 
+def get_fresh_events(current_time: int) -> List[Event]:
+    """
+    Возвращает список событий, у которых не истёк дедлайн.
+    """
+    return [event for event in events.values() if event.deadline > current_time]
+
 def create_event(event: Event) -> Event:
     """
     Создаёт новое событие в имитации базы данных.
@@ -41,6 +47,7 @@ def update_event_status(event_id: str, status: EventState) -> Optional[Event]:
     event = events.get(event_id)
     if event:
         event.state = status
+        event.status_updated = True
     return event
 
 def delete_event(event_id: str) -> Optional[Event]:

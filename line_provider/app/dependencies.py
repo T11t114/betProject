@@ -19,5 +19,8 @@ def get_get_events_by_state() -> callable:
 def get_get_expired_events() -> callable:
     return crud.get_expired_events
 
+def get_get_fresh_events() -> callable:
+    return crud.get_fresh_events
+
 def get_update_event_status() -> callable:
     return crud.update_event_status
