@@ -1,6 +1,6 @@
 import pytest
 import httpx
-from line_provider.app.api import app
+from app.api import app
 from app.schemas import EventState
 
 

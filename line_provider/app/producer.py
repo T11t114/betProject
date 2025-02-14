@@ -1,7 +1,7 @@
 import json
 import brotli
-from line_provider.app.schemas import EventState
-from line_provider.app.config import config
+from app.schemas import EventState
+from app.config import config
 from aiokafka import AIOKafkaProducer
 
 def create_producer() -> AIOKafkaProducer:

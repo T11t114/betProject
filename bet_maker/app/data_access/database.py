@@ -1,7 +1,7 @@
 from typing import AsyncGenerator
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
-from bet_maker.app.config import config
+from app.config import config
 
 
 

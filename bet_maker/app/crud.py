@@ -1,6 +1,6 @@
 from sqlalchemy import select
-from bet_maker.app.models import Bet
-from bet_maker.app.schemas import BetSchema, BetState
+from app.models import Bet
+from app.schemas import BetSchema, BetState
 from sqlalchemy.ext.asyncio import AsyncSession
 
 

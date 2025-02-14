@@ -1,6 +1,6 @@
 from typing import Optional, List
-from line_provider.app.schemas import Event, EventState
-from line_provider.app.database import events
+from app.schemas import Event, EventState
+from app.database import events
 
 
 def get_event(event_id: str) -> Optional[Event]:

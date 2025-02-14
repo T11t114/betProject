@@ -1,7 +1,7 @@
 import asyncio
 from fastapi import FastAPI
-from bet_maker.app.api import router
-from bet_maker.app.consumer import consumer, consume
+from app.api import router
+from app.consumer import consumer, consume
 
 # uvicorn bet_maker.app.run:app --reload --port 8003
 

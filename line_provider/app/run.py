@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from line_provider.app.producer import producer
-from line_provider.app.api import router as events_router
+from app.producer import producer
+from app.api import router as events_router
 
 # uvicorn line_provider.app.run:app --reload --port 8002
 

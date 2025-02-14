@@ -1,8 +1,8 @@
 import datetime
 from fastapi import APIRouter, Depends, HTTPException, Path, Query
-from line_provider.app.producer import handle_event_status
-from line_provider.app.schemas import Event, EventState
-from line_provider.app import dependencies
+from app.producer import handle_event_status
+from app.schemas import Event, EventState
+from app import dependencies
 import time
 
  

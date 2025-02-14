@@ -1,4 +1,4 @@
-from line_provider.app import crud
+from app import crud
 
 
 def get_create_event() -> callable:

@@ -1,9 +1,9 @@
 import json
 from aiokafka import AIOKafkaConsumer
 import brotli
-from bet_maker.app.config import config
-from bet_maker.app.crud import update_bet_status
-from bet_maker.app.data_access.database import get_session
+from app.config import config
+from app.crud import update_bet_status
+from app.data_access.database import get_session
 
 def create_consumer() -> AIOKafkaConsumer:
 

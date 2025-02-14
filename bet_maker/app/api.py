@@ -1,8 +1,8 @@
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
-from bet_maker.app import  dependencies
-from bet_maker.app.data_access.database import get_session
-from bet_maker.app.schemas import BetResponse, BetSchema
+from app import  dependencies
+from app.data_access.database import get_session
+from app.schemas import BetResponse, BetSchema
 from sqlalchemy.ext.asyncio import AsyncSession
 
 router = APIRouter()
@@ -10,7 +10,7 @@ router = APIRouter()
 async def fetch_events():
     async with httpx.AsyncClient() as client:
         try:
-            response = await client.get("http://127.0.0.1:8002/events/fresh")
+            response = await client.get("http://lineprovider:8002/events/fresh")
             response.raise_for_status()  
             return response.json()
         except httpx.HTTPStatusError as e:

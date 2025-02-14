@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, Float, Enum, String
 from sqlalchemy.orm import DeclarativeBase
 
-from bet_maker.app.schemas import BetState
+from app.schemas import BetState
 
 
 class Base(DeclarativeBase):

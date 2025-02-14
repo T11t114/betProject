@@ -1,4 +1,4 @@
-from line_provider.app.schemas import Event, EventState
+from app.schemas import Event, EventState
 import time 
 
 

@@ -1,4 +1,4 @@
-from bet_maker.app import crud
+from app import crud
 
 
 def get_create_bet() -> callable:
